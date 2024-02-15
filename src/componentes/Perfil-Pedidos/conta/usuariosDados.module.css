@@ -1,0 +1,23 @@
+.dadosUsuario{
+    padding: 20px 2%;
+}
+.dadosUsuario p{
+    margin-top: 12px;
+}
+.dadosUsuario input{
+    width: 430px;
+    height: 25px;
+    padding-left: 4px;
+}
+.dadosUsuario input[type= number], .dadosUsuario input[type= date] {
+    width: 210px;
+}
+
+@media (max-width: 480px){
+    .dadosUsuario{
+        width: 100%;
+    }
+    .dadosUsuario input{
+        width: 100%;
+    }
+}

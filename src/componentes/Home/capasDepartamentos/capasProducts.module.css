@@ -1,0 +1,52 @@
+.boxProducts{
+    max-width: 100%;
+    display: flex;
+    text-align: center;   
+    justify-content: center;
+    margin: 50px 2% 0 2%;
+}
+
+.capas{
+  max-width: 100%;
+}
+.capas img{
+    max-width: 200px;
+    max-height: 235px;
+}
+.capas img:hover{
+  scale: 0.9;
+}
+
+@media (max-width: 852px){
+    .capas img{
+        max-width: 165px;
+        max-height: 200px;
+    }
+}
+@media (max-width: 520px){
+    .boxProducts{
+        margin-top: 30px;
+    }
+    .capas img{
+        max-width: 135px;
+        max-height: 165px;
+    }
+}
+@media (max-width: 415px){
+    .capas img{
+        max-width: 115px;
+        max-height: 145px;
+    }
+}
+@media (max-width: 360px){
+    .capas img{
+        max-width: 105px;
+        max-height: 135px;
+    }
+}
+@media (max-width: 323px){
+    .capas img{
+        max-width: 85px;
+        max-height: 115px;
+    }
+}

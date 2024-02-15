@@ -1,0 +1,182 @@
+.Header{
+    background-color: #E95C7C;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    align-items: flex-end; 
+    justify-content: space-between;
+}
+
+.Logo{
+    margin-left: 20px;
+    padding: 10px 0; 
+}
+
+.Logo img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.Menu{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 1%;
+    margin-bottom: 12px;
+}
+.MenuMobile{
+    display: none;
+}
+.MenuMobile img{
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+}
+.links a{
+    padding: 3px 1px;
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+.links a:nth-of-type(2), .links a:nth-of-type(3){
+    margin-left: 45px;
+}
+.links p:hover{
+    scale: 0.9;
+}
+.search{
+    width: 290px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.search input{
+    background-color: #cc395b;
+    width: 290px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.search input::placeholder {
+    color: white;
+  }
+.searchIcon{
+    width: 20px;
+    height: 20px;
+}
+.searchIcon img{
+    width: 19px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1089px){
+    .links{
+        display: none;
+    }
+    .MenuMobile{
+        display: flex;
+        height: 50px;
+        margin-top: 58px;
+        background-color: #cc395b;
+        text-align: center; 
+        border-radius: 7px;
+    }
+    .MenuMobile img{
+        width: 50px;
+        height: 50px;
+    }
+    .listMenu{
+        position: absolute;
+        background-color: #cc395b;
+        z-index: 50;
+        margin-top: 50px;
+    }
+    .listMenu ul{
+        padding: 10px;
+        list-style-type: none;
+        background-color: #cc395b
+    }
+    .MenuMobile ul li{
+        margin-bottom: 10px;
+    }
+    .MenuMobile ul a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;  
+    }
+    .MenuMobile li:hover{
+        border: solid 1px white;
+        border-radius: 5px;
+    }
+}
+@media (max-width:641px){
+    .Logo{
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .Logo img{
+        max-width: 85px;
+        max-height: 85px;
+    
+    }
+    .Menu{
+        width: 100%;
+        justify-content: center;
+    }
+    .MenuMobile{
+        margin: 7px 10px 10px 0;
+    }
+    .search{
+        margin-bottom: 10px;
+    }
+
+}
+@media (max-width:423px){
+    .cartIcon{
+        margin-top: 12px;
+    }
+    .MenuMobile, .search{
+     margin-top: 3px; 
+       
+    }
+}
+@media (max-width:310px){
+    .search{
+        max-width: 90%;
+    }
+    .search input{
+        max-width: 100%;
+    }
+    
+    .listMenu ul{
+        padding: 5px;
+        list-style-type: none;
+        background-color: #cc395b
+    }
+    .MenuMobile ul li{
+        margin-bottom: 5px;
+    }
+    .MenuMobile ul a{
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+        text-decoration: none;  
+    }
+    .MenuMobile li:hover{
+        border-radius: 5px;
+    }
+
+}

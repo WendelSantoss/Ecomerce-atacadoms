@@ -1,0 +1,133 @@
+.ofertasSection{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+.marcas, .onSales{
+    max-width: 100%;
+    height: 400px;
+    margin-top: 70px;
+}
+.ofertasSection h1{
+    margin-bottom: 20px;
+}
+.cardHome{
+    margin: 0 auto;
+    border: solid 3px #e4e0d4e0;
+    width: 250px;
+    height: 350px;
+    padding: 5px 10px 20px 10px;
+    position: relative;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    bottom: 10px;
+    left: 0px;
+    padding: 0 2%;
+    width: 100%;
+    position: absolute;
+}
+.infos h4{
+    font-size: 13px;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}
+
+.infos a{
+    text-decoration: none;
+    color: black;
+}
+.infos h6, .infos p{
+    margin-left: 5px;
+}
+.infos p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(17, 170, 17);
+}
+.marca{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.marca p{
+    font-style: italic;
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+}
+.cardHome img{
+    max-width: 165px;
+    max-height: 175px;
+}
+.cardHome:hover{
+    border: solid 3px  #eb587a;
+}
+.carregamento{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.esgotado{
+    padding: 5px;
+    width: 100%;
+    background-color: #eb587a;
+}
+.esgotado p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold ;
+    color: white;
+}
+
+
+@media (max-width: 675px){
+    .ofertasSection h1{
+        font-size: 24px;
+    }
+}
+@media (max-width: 580px){
+    .ofertasSection h1{
+        font-size: 20px;
+    }
+    .marcas {
+        margin-top: 15px;
+        height: auto;
+    }
+    .onSales {
+        margin-top: 20px;
+        height: auto;
+    }
+}
+@media (max-width: 417px){
+    .ofertasSection h1{
+        font-size: 16px;
+    }
+    .cardHome{
+        border: solid 3px #e4e0d4e0;
+        width: 230px;
+        height: 313px;
+    }
+
+}
+@media (max-width: 333px){
+    .ofertasSection h1{
+        font-size: 13px;
+    }
+    .cardHome{
+        width: 200px;
+        height: 288px;
+    }
+    .cardHome img{
+        width: 1350px;
+        height: 135px;
+    }
+}

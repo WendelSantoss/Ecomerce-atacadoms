@@ -1,0 +1,100 @@
+.loginCartShop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    filter: drop-shadow( 0 0 24px  rgb(190, 52, 75) );
+}
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 100vh;
+    width: 100%;
+    filter: drop-shadow( 0 0 24px  rgb(190, 52, 75) );
+}
+.loginCartShop .form, .login .form{
+    background-color: #e4e0d4e0;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.loginCartShop h2, .login  h2{
+    color: black;
+}
+.loginCartShop  p, .login  p{
+    margin-top: 14px;
+}
+.loginCartShop input, .login input{
+    width: 100%;
+    height: 25px;
+    padding-left: 3px;
+}
+.loginCartShop  input::placeholder, .login  input::placeholder {
+    color: black;
+  }
+.loginCartShop  a, .login a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.loginCartShop span, .login span{
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 8px;
+}
+.loginCartShop span:hover, .login span:hover{
+    color: rgb(110, 106, 106);
+}
+.loginCartShop button, .login button{
+    cursor: pointer;
+    background-color: #b84661;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 15px;
+    padding: 5px 5px;
+}
+.loginCartShop button:nth-of-type(2), .login button:nth-of-type(2) {
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: #b84661 ;
+}
+
+.loginCartShop button:hover, .login button:hover{
+    background-color:  #E95C7C;
+}
+.erro{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    margin: 0 2%;
+}
+.erro p{
+    margin: 0;
+    color: white;
+    font-size: 12px;
+}
+
+@media (max-width: 350px){
+    .loginCartShop .form, .login .form {
+        width: 96%;
+    }
+    .loginCartShop h2, .login  h2{
+        font-size: 18px;
+    }
+}

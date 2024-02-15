@@ -1,0 +1,66 @@
+.cardsItens{
+    margin: 5px;
+    border: solid 3px #e4e0d4e0;
+    width: 200px;
+    height: 315px;
+    padding: 5px 10px 20px 10px;
+    position: relative;
+}
+.cardsItens img{
+    width: 160px;
+    height: 155px;
+    object-fit: contain;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    bottom: 10px;
+    left: 0px;
+    padding: 0 2%;
+    width: 100%;
+    position: absolute;
+}
+.infos h4{
+    font-size: 13px;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}
+
+.infos a{
+    text-decoration: none;
+    color: black;
+}
+.infos h6, .infos p{
+    margin-left: 5px;
+}
+.infos p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(17, 170, 17);
+}
+.marca{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.marca p{
+    font-style: italic;
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+}
+.cardsItens:hover{
+    border: solid 3px  #eb587a;
+}
+.esgotado{
+    padding: 5px;
+    width: 100%;
+    background-color: #eb587a;
+}
+.esgotado p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold ;
+    color: white;
+}

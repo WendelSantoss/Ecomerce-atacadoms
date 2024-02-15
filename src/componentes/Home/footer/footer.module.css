@@ -1,0 +1,99 @@
+.footer{
+    background-color: #E95C7C;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footerWhats{
+    width: 50%;    
+    padding: 0 30px;
+    text-align: center;
+}
+.footer h2{
+    font-size: 15px;
+    color: white;
+    padding: 20px 0;
+}
+.footerWhats a{
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    padding: 13px 10px;
+    text-decoration: none;
+}
+.footerWhats img{
+    max-width: 25px;
+    max-height: 25px;
+    margin-top: 3px;
+}
+
+.midiaSocial{
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+.midiaSocial a{
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0 12px 8px;
+    text-decoration: none;
+}
+.midiaSocial img{
+    align-items: center;
+    max-width: 25px;
+    max-height: 25px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.footerPagamentos{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footerPagamentos img{
+    max-width: 100%;
+
+}
+.footer hr{
+    margin-top: 10px;
+    border: solid 0.5px #e4e0d4e0;
+    width: 100%;
+}
+.footer p{
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+    margin: 10px 0;
+    color: white;
+}
+
+.footerWhats a:hover,
+.midiaSocial a:hover{
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+@media (max-width:717px){
+    .footerWhats, .midiaSocial{
+        width: 100%;
+        
+    }
+    .midiaSocial{
+        margin-top: 10px;
+    }
+    .footerWhats h2,.midiaSocial h2{
+        padding: 5px 0;
+        font-size: 13px;
+    }
+    .footerWhats a{
+        font-size: 11px;
+        margin-top: 0px;
+    }
+    .footerPagamentos{
+        font-size: 13px;
+    }
+}

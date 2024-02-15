@@ -1,0 +1,92 @@
+.perfilPedidos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.coluna, .Mob{
+    display: flex;
+    flex-direction: column;
+    background-color: #E95C7C;
+    text-align: center;
+    width: 200px;
+    padding: 20px 2%;
+}
+.coluna p, .Mob p{
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+}
+.coluna u, .Mob u{
+    padding: 20px 0;
+}
+.coluna li, .Mob li{
+    margin-top: 20px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.coluna li a, .Mob li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.coluna a:hover, .Mob a:hover{
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 0 2px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    background-color: #e4e0d4e0;;
+}
+.content input::placeholder{
+    color: black;
+}
+.colunaMobile{
+    display: none;
+}
+.reverse {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+@media (max-width: 715px){
+    .coluna{
+        display: none;
+    }
+    .content{
+        padding: 40px 20px ;
+    }
+    .colunaMobile{
+        display: flex;
+        position: absolute;
+        left: 0;
+    }
+    .colunaMobile img{
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+    .Mob{
+        display: flex;
+        width: 250px;
+        padding-top: 5px;
+    }
+    .Mob li{
+        margin: 0 0 20px 0;
+    }
+    .Mob p{
+       margin-bottom: 13px;
+    }
+    
+}
+@media (max-width: 411px){
+    .Mob{
+        width: 230px;
+    }
+    .colunaMobile img{
+        height: 35px;
+        width: 35px;
+    }
+}

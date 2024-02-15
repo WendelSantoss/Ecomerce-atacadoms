@@ -1,0 +1,35 @@
+.moveButton{
+  width: 100%;
+  text-align: right;
+  margin-top: 5px;
+}
+.pink{
+  cursor: pointer;
+  background-color: #E95C7C;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px 5px;
+  width: 60px;
+}
+.medio{
+  cursor: pointer;
+  background-color: #E95C7C;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px 5px;
+  width: 200px;
+}
+.grande{
+  cursor: pointer;
+  background-color: #E95C7C;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px 5px;
+  width: 100%;
+}
+.pink:hover, .grande:hover, .medio:hover{
+  background-color:  #b84661;
+}

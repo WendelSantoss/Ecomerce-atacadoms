@@ -1,0 +1,42 @@
+.loading{
+  display: flex;
+  align-items: center;
+}
+.loading p{
+  font-size: 20px;
+  font-weight: bold; 
+}
+.icon {
+  margin-left: 10px;
+  animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #eb587a;
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (max-width: 375px){
+  .loading p{
+    font-size: 15px;
+  }
+  .icon{
+    height: 20px;
+    width: 20px;
+  }
+}
+@media (max-width: 300px){
+  .loading p{
+    font-size: 10px;
+  }
+  .icon{
+    height: 15px;
+    width: 15px;
+  }
+}

@@ -1,0 +1,28 @@
+.endereco{
+    padding: 20px 2%;
+}
+.endereco form{
+    display: flex;
+    flex-direction: column;
+}
+.endereco input{
+    width: 430px;
+    height: 25px;
+    padding-left: 3px;
+}
+.endereco input:nth-of-type(1){
+    width: 150px;
+}
+
+.endereco p{
+    margin-top: 12px;
+}
+
+@media (max-width: 490px){
+    .endereco{
+        width: 100%;
+    }
+    .endereco input{
+        width: 100%;
+    }
+}

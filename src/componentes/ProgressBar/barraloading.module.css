@@ -1,0 +1,14 @@
+.barraProgresso{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    z-index: 10000;
+}
+.carregandoBarra{
+    height: 100%;
+    background-color: #2480dc;
+    transition: width 0.5s ease-in-out;
+}

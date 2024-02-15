@@ -1,0 +1,43 @@
+.allPage{
+    display: flex;
+    width: 100%;
+}
+.cardsPaginacao{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.cardsPaginacao h2{
+    margin: 10px 20px;
+}   
+.mostuario{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.carregamento{
+    margin-left: 20px;
+}
+.opacidade {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    opacity: 0.5;
+	transition: opacity ;
+}
+@media (max-width: 589px){
+    .cardsPaginacao{
+        width: 100%;
+    }
+    .cardsPaginacao h2{
+        text-align: center;
+        font-size: 15px;
+    }
+    .carregamento{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+}

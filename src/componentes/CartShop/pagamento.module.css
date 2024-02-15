@@ -1,0 +1,94 @@
+.boxPagamento{
+    padding: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e4e0d4e0
+}
+.boxPagamento h3{
+    margin-bottom: 10px;
+}
+.boxPagamento p{
+    font-weight: bold;
+    font-size: 13px;
+}
+.boxPagamento hr{
+    margin-bottom: 10px;
+    border: solid 0.5px #1b1b19e0;
+    width: 100%;
+}
+.resumoTotal{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.dadosPagamento{
+    display: flex;
+    flex-direction: column;
+}
+.dadosPagamento h5{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.dadosPagamento select{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.central{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+}
+.qrCode{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+.creditoCadastrado p{
+    margin-top: 10px;
+}
+.creditoNãoCadastrado p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.creditoNãoCadastrado span{
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 13px;
+}
+.creditoNãoCadastrado input{
+    margin-bottom: 13px;
+    height: 23px;
+    padding-left: 5px;
+}
+.creditoNãoCadastrado input:nth-of-type(3){
+    width: 35px;
+    margin-bottom: 3px;
+}
+.creditoNãoCadastrado input[type=text]{
+    width: 280px;
+}
+.creditoNãoCadastrado input:nth-of-type(1){
+    width: 200px;
+}
+.creditoNãoCadastrado select{
+    display: block;
+}
+
+@media (max-width: 718px){
+    .boxPagamento{
+        width: 100%;
+    }
+}
+@media (max-width: 330px){
+    .creditoNãoCadastrado input[type=text]{
+        width: 230px;
+    }
+}

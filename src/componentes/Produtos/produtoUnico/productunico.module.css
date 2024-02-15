@@ -1,0 +1,92 @@
+.productUnico{
+    display: flex;
+    width: 100%;
+}
+.conteudo{
+    padding: 10px 2% 10px 20px;
+    flex-grow: 1;
+}
+.conteudo h3{
+    margin: 10px;
+}
+.dados{
+    display: flex;
+}
+.boxImg{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    border: 3px solid  rgb(194, 192, 192);
+}
+.loaderErroCentral{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.descricao{
+    margin-left: 20px;
+}
+.descricao p {
+    font-size: 13px;
+    
+}
+.descricao h2{
+    font-size: 26px;
+    color: green;
+}
+.botaoPrecoCart{ 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.precoCart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;    
+}
+.precoCart h2{
+    margin-right: 10px;
+}
+.precoCart img{
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #E95C7C;
+}
+.precoCart img:hover{
+    scale: 0.9;
+    background-color:  #b84661;
+}
+
+@media (max-width: 800px ){
+    .boxImg{
+        width: 200px;
+        height: 250px;
+        margin: 20px;
+    }
+    .boxImg img{
+        width: 180px;
+        height: 200px;
+    }
+    .dados{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width: 589px){
+    .conteudo h3{
+        margin-left: 20px;
+    }
+    .dados{
+        margin-bottom: 20px;
+    }
+    .descricao{
+        margin-left: 0px;
+    }
+}
