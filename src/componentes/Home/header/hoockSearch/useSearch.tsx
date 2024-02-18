@@ -43,7 +43,7 @@ export default function useSearch() {
     setDadosFiltrados(filtrados)
    
     // Filtrar produtos com base na consulta de pesquisa
-  },[dados,pesquisa])
+  },[dados, pesquisa])
   // novo useEffect afim de n gerar um novo fetch desnecesssário de dados.
 
   return{

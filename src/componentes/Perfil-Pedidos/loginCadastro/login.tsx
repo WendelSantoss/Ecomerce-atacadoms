@@ -63,8 +63,11 @@ export default function Login(props: StyleParaCartShop){
     }//check de dados para poder chamar a funcao de validar cadastro do firebase
 
     useEffect(()=>{
-        setandoErro('')
-    },[])
+        const clearError = () => {
+            setandoErro('');
+        };
+        clearError();
+    },[]); // Função para limpar erros quando o usuario sair e voltar para página de login.
     
     return(
         <div className={StyleLoginOuCartShop}>

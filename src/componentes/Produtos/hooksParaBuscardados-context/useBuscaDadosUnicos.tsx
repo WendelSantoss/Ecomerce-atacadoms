@@ -61,7 +61,7 @@ export default function useBuscaDadosUnicos(brand: string){
                 )
             })
         };
-    },[])
+    },[ofertasProdutos, makeupsProduto, categoriaProduto, brand]);
 
     return{
         dados,
