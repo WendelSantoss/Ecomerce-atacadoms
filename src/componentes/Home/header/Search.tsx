@@ -10,16 +10,19 @@ import Loader from "@/componentes/LoaderPadrao/Loader"
 
 export default function Search(){
     const parahms= useSearchParams();
-    const busca = parahms.get('busca');
+    let busca = parahms.get('busca');
     // trazendo a busca do cliente por parametros da url.
-
+    let buscaAnterior= parahms.get('busca')
+    
     const {DadosFiltrados, setPesquisa, loading} = useSearch()
     //constante e função do hook para busca do item pesquisado.
 
-    useEffect(()=>{
-        (busca && setPesquisa(busca))
 
-    },[parahms])// setando o item buscado para o hook filtrar.
+    useEffect(()=>{
+        
+        (busca  && setPesquisa(busca))
+
+    },[parahms, busca, setPesquisa])// setando o item buscado para o hook filtrar.
 
     const myRef = useRef<any>('')
     const executeScroll = () => myRef.current.scrollIntoView()  

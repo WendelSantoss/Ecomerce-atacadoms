@@ -14,7 +14,7 @@ export default function useLocalStorage<T>(item: string, valorInicial : T){
             }
             setLoading(false)
         }
-    }, []);//resgate de dados do localStorage para renderizar no componente cart e na page Cart
+    }, [item]);//resgate de dados do localStorage para renderizar no componente cart e na page Cart
 
     const atualizarLocalStorage = (dados: Info, name: string)=>{
         let cartItens= localStorage.getItem('cart-itens');
