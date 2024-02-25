@@ -1,0 +1,11 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/v1/products.json",
+        "destination": "http://makeup-api.herokuapp.com/api/v1/products.json",
+        "headers": {
+          "Host": "makeup-api.herokuapp.com"
+        }
+      }
+    ]
+  }
