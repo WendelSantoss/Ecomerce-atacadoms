@@ -26,7 +26,7 @@ export default function CapasProducts() {
         return(
           <div className={styles.capas} key={item.id}>
             
-            <Link onClick={setPagePorCapa} href={`http://localhost:3000/produtos`}><Image src={item.picture} alt='Capas de Produtos'></Image></Link>
+            <Link onClick={setPagePorCapa} href='/produtos'><Image src={item.picture} alt='Capas de Produtos'></Image></Link>
           
           </div>
         )

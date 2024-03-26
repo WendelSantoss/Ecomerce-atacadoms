@@ -24,7 +24,7 @@ export default function CartCompras(){
     return(
         <div className={styles.cartIcon}>
 
-            <Link href='http://localhost:3000/carrinho'>
+            <Link href='/carrinho'>
                 <Image src={Cart} alt='iconCart'></Image>
                 {quantidade> 0 &&  <div className={styles.valor}><p>{quantidade}</p></div> }
             

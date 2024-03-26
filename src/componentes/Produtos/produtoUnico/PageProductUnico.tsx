@@ -69,7 +69,7 @@ export default function ProductUnico(props: dadosBusca){
                                 <Image onClick={adicionaItenCart} src={Cart} alt='carregando'></Image>
                           </div>
                         
-                          <Link onClick={adicionaItenCart} href='http://localhost:3000/carrinho'>
+                          <Link onClick={adicionaItenCart} href='/carrinho'>
                             <ButtonPink medio text='Comprar'></ButtonPink>
                           </Link>
                           

@@ -21,13 +21,13 @@ export default function MobileComponente(){
         {(mobile)?
         <div className={styles.listMenu}>
             <ul>
-            <li><Link onClick={hangdleMobile} href='http://localhost:3000/'>Home</Link></li>
-            <li><Link onClick={hangdleMobile} href='http://localhost:3000/produtos'>Produtos</Link></li> 
+            <li><Link onClick={hangdleMobile} href='/'>Home</Link></li>
+            <li><Link onClick={hangdleMobile} href='/produtos'>Produtos</Link></li> 
             {
             (user)?
-                <li><Link onClick={hangdleMobile} href='http://localhost:3000/login&perfil'>Perfil e Pedidos</Link></li>
+                <li><Link onClick={hangdleMobile} href='/login&perfil'>Perfil e Pedidos</Link></li>
             :  
-            <li><Link onClick={hangdleMobile}  href='http://localhost:3000/login&perfil'>Entrar/Cadastro</Link></li> 
+            <li><Link onClick={hangdleMobile}  href='/login&perfil'>Entrar/Cadastro</Link></li> 
             }
             </ul>
         </div>: <></>}

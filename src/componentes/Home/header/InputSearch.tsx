@@ -10,10 +10,16 @@ export default function InputSearch(){
 
     return(
         <div className={styles.search}>
-            <input onChange={(e)=> setPesquisa(e.target.value)} type='text' name='quickSearch' placeholder='O que você procura?'/> 
+
+            <input 
+            onChange={(e)=> setPesquisa(e.target.value)} 
+            type='text' 
+            name='quickSearch' 
+            placeholder='O que você procura?'
+            /> 
             <div className={styles.searchIcon}>
             <Link href={{
-                pathname: 'search',
+                pathname: '/search',
                 query: { busca: pesquisa }
             }}>
                 <Image src={Lupa} alt='iconLupa'></Image> 

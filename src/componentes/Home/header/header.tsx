@@ -18,7 +18,7 @@ export default function Header() {
       <div className={styles.Header}>
       
         <div className={styles.Logo}>
-            <Link href='http://localhost:3000/'>
+            <Link href='/'>
               <Image src={Logo} alt='imageLogo'></Image>
             </Link>
         </div>

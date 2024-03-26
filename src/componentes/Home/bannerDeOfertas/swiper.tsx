@@ -22,7 +22,7 @@ export default function SlideSwiper(props: any) {
         >
           {info.map((dados:any) => (
             <SwiperSlide key={dados.id}>
-              <Link href='http://localhost:3000/produtos'><Image src={dados.picture} alt='Ofertas Images'></Image></Link>
+              <Link href='/produtos'><Image src={dados.picture} alt='Ofertas Images'></Image></Link>
             </SwiperSlide>
           )
           )}

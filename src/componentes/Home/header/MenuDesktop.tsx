@@ -10,13 +10,13 @@ export default function MenuDesktop(){
 
     return(
       <div className={styles.links}>
-        <Link href='http://localhost:3000/'><p>Home</p></Link>
-        <Link href='http://localhost:3000/produtos'><p>Produtos</p></Link>
+        <Link href='/'><p>Home</p></Link>
+        <Link href='/produtos'><p>Produtos</p></Link>
         {
           (user)?
-            <Link href='http://localhost:3000/login&perfil'><p>Perfil/Pedidos</p></Link>
+            <Link href='/login&perfil'><p>Perfil/Pedidos</p></Link>
           :  
-            <Link href='http://localhost:3000/login&perfil'><p>Entrar/Cadastro</p></Link>
+            <Link href='/login&perfil'><p>Entrar/Cadastro</p></Link>
         }  
       </div>
 

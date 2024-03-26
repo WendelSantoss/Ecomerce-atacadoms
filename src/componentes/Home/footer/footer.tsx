@@ -12,12 +12,16 @@ export default function Footer() {
 
                 <div className={styles.footerWhats}>
                     <h2>Grupo com atualizações de estoques:</h2>
-                    <Link href='https://chat.whatsapp.com/CotIHtV3tBw54ZZxSq001e' target='_blank'>Grupo Whats <Image src={WhatsIcon} alt='iconWhats'></Image></Link>  
+                    <Link href='https://chat.whatsapp.com/CotIHtV3tBw54ZZxSq001e' target='_blank'>
+                        Grupo Whats <Image src={WhatsIcon} alt='iconWhats'></Image>
+                    </Link>  
                 </div>
      
                 <div className={styles.midiaSocial}>
                     <h2>Siga-nos no Instagran:</h2>
-                        <Link href='https://www.instagram.com/msatacadomake/' target='_blank'>@msatacadomake   <Image src={InstagranIcon} alt='iconInsta'></Image> </Link>
+                        <Link href='https://www.instagram.com/msatacadomake/' target='_blank'>
+                            @msatacadomake <Image src={InstagranIcon} alt='iconInsta'></Image> 
+                        </Link>
                 </div>
 
                 <div className={styles.footerPagamentos}>
